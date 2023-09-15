@@ -33,7 +33,7 @@ function App() {
 						handleClickOnSelect = { handleClickOnSelect }
 					></Cards>
 				</div>
-				<div className="shrink-0">
+				<div className="shrink-0 md:w-[310px]">
 					<Sidebar 
 						selectedCourse={ selectedCourse }
 						creditHour={ creditHour }
