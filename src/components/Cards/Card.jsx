@@ -7,7 +7,6 @@ export default function Card({ content }) {
 	const { course_name, credit, img, description, price} = content;
 	const logoStyle = "text-2xl"
 	return <div className="flex flex-col justify-between p-4 bg-white rounded-lg">
-
 		<div>
 			<div className="mb-4 rounded-xl">
 				<img src={ img } className="object-cover w-full h-full" alt=""/>
@@ -18,14 +17,19 @@ export default function Card({ content }) {
 			</div>
 		</div>
 		
-		<div className="flex justify-around">
-			<div className={ bottomStyle }>
-				<FiDollarSign className={ logoStyle }/>
-				<p className="text-custom-black/60">Price: { price }</p>
+		<div className="">
+			<div className="flex justify-around">
+				<div className={ bottomStyle }>
+					<FiDollarSign className={ logoStyle }/>
+					<p className="text-custom-black/60">Price: { price }</p>
+				</div>
+				<div className={ bottomStyle }>
+					<TfiBook className={ logoStyle }/>
+					<p className="text-custom-black/60">Credit: { credit }hr</p>
+				</div>
 			</div>
-			<div className={ bottomStyle }>
-				<TfiBook className={ logoStyle }/>
-				<p className="text-custom-black/60">Credit: { credit }hr</p>
+			<div>
+				<button className="text-white w-full bg-custom-blue py-[10px] mt-6 rounded-lg text-lg font-semibold">Select</button>
 			</div>
 		</div>
 	</div>
