@@ -9,6 +9,7 @@ export default {
 		  colors: {
 			  "custom-black": "#1C1B1B",
 			  "custom-blue": "#2F80ED",
+			  "custom-white": "#F3F3F3",
 		  }
 	  },
   },

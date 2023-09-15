@@ -1,5 +1,6 @@
 [
     {
+		"id": 1,
         "course_name": "Introduction to MySQL",
         "credit": 3,
         "price": 499.99,
@@ -7,6 +8,7 @@
         "img": "https://i.ibb.co/jZDWktS/Rectangle-2.png"
     },
     {
+		"id": 2,
         "course_name": "Python Object-Oriented Programming",
         "credit": 4,
         "price": 599.99,
@@ -14,6 +16,7 @@
         "img": "https://i.ibb.co/2sFQmJc/Rectangle-2-1.png"
     },
     {
+		"id": 3,
         "course_name": "C Programming Fundamentals",
         "credit": 3,
         "price": 449.99,
@@ -21,6 +24,7 @@
         "img": "https://i.ibb.co/rm2RWCM/Rectangle-2-2.png"
     },
     {
+		"id": 4,
         "course_name": "Algorithms and Data Structures",
         "credit": 4,
         "price": 599.99,
@@ -28,6 +32,7 @@
         "img": "https://i.ibb.co/PNWSJ1n/Rectangle-2-3.png"
     },
     {
+		"id": 5,
         "course_name": "C++ Object-Oriented Programming",
         "credit": 4,
         "price": 649.99,
@@ -35,6 +40,7 @@
         "img": "https://i.ibb.co/GnvRWsr/Rectangle-2-4.png"
     },
     {
+		"id": 6,
         "course_name": "Software Engineering Principles",
         "credit": 3,
         "price": 499.99,
@@ -42,6 +48,7 @@
         "img": "https://i.ibb.co/C9kHHGK/Rectangle-2-5.png"
     },
     {
+		"id": 7,
         "course_name": "Analytics and Problem Solving",
         "credit": 3,
         "price": 449.99,
@@ -49,6 +56,7 @@
         "img": "https://i.ibb.co/R2LY7T3/Rectangle-2-6.png"
     },
     {
+		"id": 8,
         "course_name": "Data Structures and Algorithms (DSA)",
         "credit": 4,
         "price": 599.99,
@@ -56,6 +64,7 @@
         "img": "https://i.ibb.co/CQT4mv6/Rectangle-3.png"
     },
     {
+		"id": 9,
         "course_name": "AWS Cloud Computing",
         "credit": 3,
         "price": 499.99,
