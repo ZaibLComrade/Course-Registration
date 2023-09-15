@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { FiDollarSign } from 'react-icons/fi'
 import { TfiBook } from 'react-icons/tfi'
 
-export default function Card({ content }) {
+export default function Card({ content, handleClickOnSelect }) {
 	const bottomStyle = "flex items-center gap-3"
 	const { course_name, credit, img, description, price} = content;
 	const logoStyle = "text-2xl"
@@ -17,7 +17,7 @@ export default function Card({ content }) {
 			</div>
 		</div>
 		
-		<div className="">
+		<div>
 			<div className="flex justify-around">
 				<div className={ bottomStyle }>
 					<FiDollarSign className={ logoStyle }/>
@@ -29,12 +29,13 @@ export default function Card({ content }) {
 				</div>
 			</div>
 			<div>
-				<button className="text-white w-full bg-custom-blue py-[10px] mt-6 rounded-lg text-lg font-semibold">Select</button>
+				<button onClick={ handleClickOnSelect } className="text-white w-full bg-custom-blue py-[10px] mt-6 rounded-lg text-lg font-semibold">Select</button>
 			</div>
 		</div>
 	</div>
 }
 
 Card.propTypes = {
-	content: PropTypes.object.isRequired
+	content: PropTypes.object.isRequired,
+	handleClickOnSelect: PropTypes.func.isRequired,
 }

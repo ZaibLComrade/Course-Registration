@@ -10,6 +10,10 @@ function App() {
 	const [totalCreditHour, setTotalCreditHour] = useState(0);
 	const [selectedCourse, setSelectedCourse] = useState([]);
 	
+	function handleClickOnSelect() {
+		console.log("Select button Clicked");
+	}
+	
 	// Loading API resources
 	useEffect(() => {
 		fetch("courseData.json")
@@ -22,7 +26,10 @@ function App() {
 			<Header text="Course Registration"></Header>
 			<div className="flex flex-col flex-col-reverse mx-4 md:flex-row gap-4">
 				<div>
-					<Cards content={ courseData }></Cards>
+					<Cards 
+						content={ courseData }
+						handleClickOnSelect = { handleClickOnSelect }
+					></Cards>
 				</div>
 				<div className="shrink-0">
 					<Sidebar 
