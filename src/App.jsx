@@ -10,8 +10,10 @@ function App() {
 	const [totalCreditHour, setTotalCreditHour] = useState(0);
 	const [selectedCourse, setSelectedCourse] = useState([]);
 	
-	function handleClickOnSelect() {
-		console.log("Select button Clicked");
+	function handleClickOnSelect({ course_name, credit }) {
+		setSelectedCourse([...selectedCourse, course_name]);
+		setCreditHour(creditHour - credit);
+		setTotalCreditHour(totalCreditHour + credit);
 	}
 	
 	// Loading API resources

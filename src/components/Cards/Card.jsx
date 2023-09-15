@@ -29,7 +29,7 @@ export default function Card({ content, handleClickOnSelect }) {
 				</div>
 			</div>
 			<div>
-				<button onClick={ handleClickOnSelect } className="text-white w-full bg-custom-blue py-[10px] mt-6 rounded-lg text-lg font-semibold">Select</button>
+				<button onClick={() => handleClickOnSelect(content) } className="text-white w-full bg-custom-blue py-[10px] mt-6 rounded-lg text-lg font-semibold">Select</button>
 			</div>
 		</div>
 	</div>
