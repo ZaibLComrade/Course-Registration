@@ -6,6 +6,9 @@ import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
 	const [courseData, setCourseData] = useState([]);
+	const [creditHour, setCreditHour] = useState(20);
+	const [totalCreditHour, setTotalCreditHour] = useState(0);
+	const [selectedCourse, setSelectedCourse] = useState([]);
 	
 	// Loading API resources
 	useEffect(() => {
@@ -17,9 +20,17 @@ function App() {
 	return (
 		<div className="container mx-auto space-y-8 pb-[50px]">
 			<Header text="Course Registration"></Header>
-			<div className="flex gap-4">
-				<Cards content={ courseData }></Cards>
-				<Sidebar></Sidebar>
+			<div className="flex flex-col flex-col-reverse mx-4 md:flex-row gap-4">
+				<div>
+					<Cards content={ courseData }></Cards>
+				</div>
+				<div className="shrink-0">
+					<Sidebar 
+						selectedCourse={ selectedCourse }
+						creditHour={ creditHour }
+						totalCreditHour={ totalCreditHour }
+					></Sidebar>
+				</div>
 			</div>
 		</div>
 	)

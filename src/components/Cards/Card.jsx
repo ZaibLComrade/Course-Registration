@@ -13,7 +13,7 @@ export default function Card({ content }) {
 			</div>
 			<div className="mb-5">
 				<h1 className="mb-3 text-lg text-custom-black">{ course_name }</h1>
-				<p className="text-custom-black/60">{ description }</p>
+				<p className="text-sm text-custom-black/60">{ description }</p>
 			</div>
 		</div>
 		
