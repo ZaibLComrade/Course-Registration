@@ -9,7 +9,7 @@
 
 ## State Management
 
-useState hook was imported from the react library and initialize states into the root parent component "App"" for fetched data from api, remaining credit, spent credit hour and for courses that are added into cart. An additional hook useEffect was imported from the same library to fetch json data from the api. Both states for remaining credit hour and spent credit hour were initialized with appropriate values and passed to the child component "Sidebar" and displayed their values in the component.
+useState hook was imported from the react library and initialized states into the root parent component "App" for fetched data from api, remaining credit, spent credit hour and for courses that are added into cart. An additional hook useEffect was imported from the same library to fetch json data from the api. Both states for remaining credit hour and spent credit hour were initialized with appropriate values and passed to the child component "Sidebar" and displayed their values in the component.
 
 In the "App" component, a handle function was declared to handle clicks from the select button of "Card" component. The function was drilled to the child component "Cards" and then passed to the target component "Card" by passing it as a prop.
 
