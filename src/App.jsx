@@ -3,6 +3,8 @@ import './App.css';
 import Cards from './components/Cards/Cards';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 	const [courseData, setCourseData] = useState([]);
@@ -11,10 +13,31 @@ function App() {
 	const [selectedCourse, setSelectedCourse] = useState([]);
 	
 	function handleClickOnSelect({ course_name, credit }) {
+		
 		if(selectedCourse.includes(course_name)) {
+			toast.info('Course already selected', {
+				position: "top-right",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "light",
+			});
 			return;
 		}
 		if((creditHour -  credit) < 0) {
+			toast.error('Insufficient credit hour', {
+				position: "top-right",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "light",
+			});
 			return;
 		}
 		setSelectedCourse([...selectedCourse, course_name]);
@@ -47,6 +70,7 @@ function App() {
 					></Sidebar>
 				</div>
 			</div>
+			<ToastContainer/>
 		</div>
 	)
 }
