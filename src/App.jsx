@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Cards from './components/Cards/Cards';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
@@ -11,6 +11,12 @@ function App() {
 	const [selectedCourse, setSelectedCourse] = useState([]);
 	
 	function handleClickOnSelect({ course_name, credit }) {
+		if(selectedCourse.includes(course_name)) {
+			return;
+		}
+		if((creditHour -  credit) < 0) {
+			return;
+		}
 		setSelectedCourse([...selectedCourse, course_name]);
 		setCreditHour(creditHour - credit);
 		setTotalCreditHour(totalCreditHour + credit);
@@ -24,7 +30,7 @@ function App() {
 	}, [])
 	
 	return (
-		<div className="container mx-auto space-y-8 pb-[50px]">
+		<div className="container mx-auto space-y-8 py-[50px]">
 			<Header text="Course Registration"></Header>
 			<div className="flex flex-col flex-col-reverse mx-4 md:flex-row gap-4">
 				<div>

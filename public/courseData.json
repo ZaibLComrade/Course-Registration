@@ -2,7 +2,7 @@
     {
 		"id": 1,
         "course_name": "Introduction to MySQL",
-        "credit": 2,
+        "credit": 1,
         "price": 25000,
         "description": "In this comprehensive course, you will delve into the world of MySQL, one of the most popular relational database management systems. You'll learn the ins and outs of database design, SQL querying, and database optimization. Whether you're a beginner or looking to deepen your database skills, this course is your gateway to mastering MySQL.",
         "img": "https://i.ibb.co/2sFQmJc/Rectangle-2-1.png"
@@ -10,7 +10,7 @@
     {
 		"id": 2,
         "course_name": "Python Object-Oriented Programming",
-        "credit": 4,
+        "credit": 2,
         "price": 17000,
         "description": "Unlock the power of Python through object-oriented programming (OOP). This extensive course will guide you through the principles of OOP, inheritance, polymorphism, and more, all within the Python ecosystem. By the end, you'll be equipped to design and build robust Python applications using OOP techniques.",
         "img": "https://i.ibb.co/jZDWktS/Rectangle-2.png"
@@ -18,7 +18,7 @@
     {
 		"id": 3,
         "course_name": "C Programming Fundamentals",
-        "credit": 3,
+        "credit": 10,
         "price": 17000,
         "description": "Embark on a journey into the world of C programming, where you'll gain a strong foundation in this versatile language. From basic syntax to complex data structures, you'll cover it all. This course is perfect for aspiring programmers and those looking to hone their C skills.",
         "img": "https://i.ibb.co/rm2RWCM/Rectangle-2-2.png"
@@ -26,7 +26,7 @@
     {
 		"id": 4,
         "course_name": "Algorithms and Data Structures",
-        "credit": 1,
+        "credit": 5,
         "price": 9000,
         "description": "Dive deep into the heart of computer science with this course on algorithms and data structures. You'll explore the fundamental building blocks of efficient software, from sorting algorithms to complex data structures like trees and graphs. Get ready to tackle coding challenges and optimize your problem-solving skills.",
         "img": "https://i.ibb.co/PNWSJ1n/Rectangle-2-3.png"
@@ -34,7 +34,7 @@
     {
 		"id": 5,
         "course_name": "C++ Object-Oriented Programming",
-        "credit": 3,
+        "credit": 5,
         "price": 15000,
         "description": "Take your programming skills to the next level with C++ and object-oriented programming. In this course, you'll harness the power of C++ for software development, mastering classes, inheritance, and templates. By the end, you'll be well-versed in building robust and efficient C++ applications.",
         "img": "https://i.ibb.co/GnvRWsr/Rectangle-2-4.png"
@@ -50,7 +50,7 @@
     {
 		"id": 7,
         "course_name": "Analytics and Problem Solving",
-        "credit": 1,
+        "credit": 5,
         "price": 12000,
         "description": "Enhance your analytical skills and problem-solving prowess with this course. Explore data-driven decision-making, statistical analysis, and critical thinking techniques. Through real-world problem-solving scenarios, you'll sharpen your ability to tackle complex challenges and make informed decisions.",
         "img": "https://i.ibb.co/R2LY7T3/Rectangle-2-6.png"
@@ -66,7 +66,7 @@
     {
 		"id": 9,
         "course_name": "AWS Cloud Computing",
-        "credit": 1,
+        "credit": 3,
         "price": 6000,
         "description": "Embark on a cloud computing journey with Amazon Web Services (AWS). Discover the ins and outs of cloud infrastructure, services, and deployment. By the end of this course, you'll be well-versed in AWS, ready to architect scalable and reliable cloud solutions for a variety of applications.",
         "img": "https://i.ibb.co/Tt3Hmwd/Rectangle-3-1.png"
