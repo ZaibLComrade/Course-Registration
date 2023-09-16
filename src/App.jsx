@@ -27,6 +27,19 @@ function App() {
 			});
 			return;
 		}
+		if(totalCreditHour >= 20) {
+			toast.warn('Max credit limit reached (20 credit hour)', {
+				position: "top-right",
+				autoClose: 3000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "colored",
+			});
+			return
+		}
 		if((creditHour -  credit) < 0) {
 			toast.error('Insufficient credit hour', {
 				position: "top-right",
