@@ -1,4 +1,4 @@
-# My Course Roaster
+# Course Registration
 
 ## Features
 
