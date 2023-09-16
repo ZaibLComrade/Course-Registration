@@ -7,10 +7,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-	const [courseData, setCourseData] = useState([]);
-	const [creditHour, setCreditHour] = useState(20);
-	const [totalCreditHour, setTotalCreditHour] = useState(0);
-	const [selectedCourse, setSelectedCourse] = useState([]);
+	const [courseData, setCourseData] = useState([]); // API data state
+	const [creditHour, setCreditHour] = useState(20); // Remaining credit hour
+	const [totalCreditHour, setTotalCreditHour] = useState(0); // Spent credit hour
+	const [selectedCourse, setSelectedCourse] = useState([]); // Courses added to cart
 	
 	function handleClickOnSelect({ course_name, credit }) {
 		
@@ -23,7 +23,7 @@ function App() {
 				pauseOnHover: true,
 				draggable: true,
 				progress: undefined,
-				theme: "light",
+				theme: "colored",
 			});
 			return;
 		}
@@ -36,7 +36,7 @@ function App() {
 				pauseOnHover: true,
 				draggable: true,
 				progress: undefined,
-				theme: "light",
+				theme: "colored",
 			});
 			return;
 		}
